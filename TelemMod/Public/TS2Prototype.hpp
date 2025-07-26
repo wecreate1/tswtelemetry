@@ -1,6 +1,7 @@
 #pragma once
 
 #include <Unreal/UObject.hpp>
+#include <Unreal/AActor.hpp>
 #include "MyBPMacros.hpp"
 
 namespace RC::Unreal

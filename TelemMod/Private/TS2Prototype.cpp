@@ -2,6 +2,7 @@
 #include <Unreal/UObjectGlobals.hpp>
 #include <Unreal/UObject.hpp>
 #include <Unreal/UClass.hpp>
+#include <Unreal/UFunction.hpp>
 
 using namespace RC;
 using namespace RC::Unreal;
