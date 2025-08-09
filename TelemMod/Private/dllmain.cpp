@@ -124,8 +124,7 @@ public:
             II_ACSES_ATC_Service_C* acsesAtcService = static_cast<II_ACSES_ATC_Service_C*>(service);
 
             // Output::send<LogLevel::Normal>(STR("TelemMod: Found Service 1\n"));
-            out.DTG_ACSES_ATC.emplace();
-            AcsesAtcData::FromService(*out.DTG_ACSES_ATC, acsesAtcService);
+            out.DTG_ACSES_ATC = AcsesAtcData::FromService(acsesAtcService);
         } else {
             out.DTG_ACSES_ATC.reset();
         }
@@ -139,8 +138,7 @@ public:
             II_PZB_Service_C* pzbService = static_cast<II_PZB_Service_C*>(service);
 
             // Output::send<LogLevel::Normal>(STR("TelemMod: Found Service 2\n"));
-            out.DTG_PZB90.emplace();
-            PzbData::FromService(*out.DTG_PZB90, pzbService);
+            out.DTG_PZB90 = PzbData::FromService(pzbService);
         } else {
             out.DTG_PZB90.reset();
         }
